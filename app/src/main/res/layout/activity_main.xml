@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColorApp"
+    tools:context="com.example.pbo.jagasehatadmin.MainActivity">
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Jumlah Pengguna :"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        tools:text="15"
+        android:id="@+id/jmlPengguna"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center_horizontal"
+        android:text="Jenis Kelamin:"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:text="0"
+            android:paddingRight="16dp"
+            android:id="@+id/jmlPria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_toRightOf="@id/jmlPria"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:id="@+id/jmlWanita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Pendidikan : "
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/pekerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingRight="16dp"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="0"
+            android:id="@+id/sd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:paddingRight="16dp"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/sd"
+            android:text="0"
+            android:id="@+id/smp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_toRightOf="@id/sd"
+            android:text="0"
+            android:id="@+id/sma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_toRightOf="@id/smp"
+            android:layout_below="@id/sma"
+            android:text="0"
+            android:id="@+id/pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:text="Pekerjaan: "
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingRight="16dp"
+            android:text="0"
+            android:id="@+id/pns_porli_tni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingRight="16dp"
+            android:layout_below="@id/pns_porli_tni"
+            android:text="0"
+            android:id="@+id/pegawai_swasta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/pns_porli_tni"
+            android:text="0"
+            android:id="@+id/Wiraswasta"
+            android:paddingRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/pegawai_swasta"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/Wiraswasta"
+            android:text="0"
+            android:textSize="20sp"
+            android:id="@+id/mahasiswa"
+            android:paddingRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/pegawai_swasta"
+            android:text="0"
+            android:textSize="20sp"
+            android:paddingRight="16dp"
+            android:id="@+id/pelajar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_toRightOf="@id/pelajar"
+            android:layout_below="@+id/mahasiswa"
+            android:textSize="20sp"
+            android:text="0"
+            android:id="@+id/lainnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#ffff"
+        android:text="Data Pengguna"
+        android:id="@+id/data_statistik"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+       android:backgroundTint="@color/colorPrimary"
+       android:textColor="#ffff"
+       android:id="@+id/download_data"
+       android:text="Download Data"
+       android:layout_gravity="center_horizontal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+</LinearLayout>
